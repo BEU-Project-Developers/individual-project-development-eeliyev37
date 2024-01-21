@@ -90,7 +90,7 @@ namespace Hardware_Shop_Management_System
             }
             else
             {
-                Key = Convert.ToInt32(guna2DataGridView1.SelectedRows[0].Cells[0].ToString());
+                Key = Convert.ToInt32(guna2DataGridView1.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
 

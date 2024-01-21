@@ -85,7 +85,7 @@ namespace Hardware_Shop_Management_System
             }
             else
             {
-                Key = Convert.ToInt32(CategoriesList.SelectedRows[0].Cells[0].ToString());
+                Key = Convert.ToInt32(CategoriesList.SelectedRows[0].Cells[0].Value.ToString());
             }
         }
 
@@ -105,7 +105,7 @@ namespace Hardware_Shop_Management_System
                     string Name = NameTb.Text;
 
                     // Update the category in the database
-                    string Query = "Update CategoryTbl set CatName = '{0}' where CatCode = {1}";
+                    string Query = "update CategoryTbl set CatName = '{0}' where CatCode = {1}";
                     Query = string.Format(Query, Name, Key);
                     Con.SetData(Query);
 
@@ -136,7 +136,7 @@ namespace Hardware_Shop_Management_System
                 try
                 {
                     // Delete the selected category from the database
-                    string Query = "Delete from CategoryTbl where CatCode = {0}";
+                    string Query = "delete from CategoryTbl where CatCode = {0}";
                     Query = string.Format(Query, Key);
                     Con.SetData(Query);
 

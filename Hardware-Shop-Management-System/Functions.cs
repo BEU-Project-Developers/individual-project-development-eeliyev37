@@ -45,7 +45,7 @@ namespace Hardware_Shop_Management_System
         // Method to execute INSERT, UPDATE, or DELETE queries and return the number of affected rows
         public int SetData(string Query)
         {
-            int Cnt;
+            int Cnt = 0;
 
             // Open the database connection if it is closed
             if (Con.State == ConnectionState.Closed)
