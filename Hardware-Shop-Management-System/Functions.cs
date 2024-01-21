@@ -17,7 +17,7 @@ namespace Hardware_Shop_Management_System
         private SqlDataAdapter Sda;
         public Functions()
         {
-            ConStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Unisoft\Documents\HardwareDb.mdf;Integrated Security=True;Connect Timeout=30;Encrypt=True";
+            ConStr = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Unisoft\Documents\HardwareDb.mdf;Integrated Security=True;Connect Timeout=30;";
             Con = new SqlConnection(ConStr);
             Cmd = new SqlCommand();
             Cmd.Connection = Con;
