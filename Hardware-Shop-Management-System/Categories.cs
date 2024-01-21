@@ -121,5 +121,26 @@ namespace Hardware_Shop_Management_System
                 }
             }
         }
+
+        private void ItT_Click(object sender, EventArgs e)
+        {
+            Items Obj = new Items();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void CustT_Click(object sender, EventArgs e)
+        {
+            Customers Obj = new Customers();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void BillT_Click(object sender, EventArgs e)
+        {
+            Billing Obj = new Billing();
+            Obj.Show();
+            this.Hide();
+        }
     }
 }

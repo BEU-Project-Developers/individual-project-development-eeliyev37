@@ -18,7 +18,6 @@ namespace Hardware_Shop_Management_System
         {
             InitializeComponent();
             Con = new Functions();
-            Con = new Functions();
         }
 
         private void LoginBtn_Click(object sender, EventArgs e)
