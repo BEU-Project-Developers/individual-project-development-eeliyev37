@@ -46,5 +46,10 @@ namespace Hardware_Shop_Management_System
                 MessageBox.Show("Wrong Username or Password");
             }
         }
+
+        private void XT_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

@@ -40,7 +40,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LoginBtn = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.XT = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -138,17 +138,18 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Reset";
             // 
-            // label5
+            // XT
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
-            this.label5.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(557, 9);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(28, 25);
-            this.label5.TabIndex = 9;
-            this.label5.Text = "X";
+            this.XT.AutoSize = true;
+            this.XT.BackColor = System.Drawing.Color.White;
+            this.XT.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.XT.ForeColor = System.Drawing.Color.Red;
+            this.XT.Location = new System.Drawing.Point(557, 9);
+            this.XT.Name = "XT";
+            this.XT.Size = new System.Drawing.Size(28, 25);
+            this.XT.TabIndex = 9;
+            this.XT.Text = "X";
+            this.XT.Click += new System.EventHandler(this.XT_Click);
             // 
             // Login
             // 
@@ -156,7 +157,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(597, 473);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.XT);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.LoginBtn);
             this.Controls.Add(this.pictureBox1);
@@ -189,7 +190,7 @@
         private System.Windows.Forms.TextBox UNameTb;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button LoginBtn;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label XT;
         private System.Windows.Forms.Label label4;
     }
 }

@@ -211,5 +211,17 @@ namespace Hardware_Shop_Management_System
             Obj.Show();
             this.Hide();
         }
+
+        private void LogouT_Click(object sender, EventArgs e)
+        {
+            Login Obj = new Login();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void XT_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

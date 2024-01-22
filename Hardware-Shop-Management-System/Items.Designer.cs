@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Items));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -52,10 +52,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.LogoutPnl = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.LogouT = new System.Windows.Forms.Label();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel8 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
+            this.XT = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.NameTb = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -274,7 +274,7 @@
             // 
             this.LogoutPnl.BackColor = System.Drawing.Color.LightSeaGreen;
             this.LogoutPnl.Controls.Add(this.pictureBox1);
-            this.LogoutPnl.Controls.Add(this.label3);
+            this.LogoutPnl.Controls.Add(this.LogouT);
             this.LogoutPnl.Location = new System.Drawing.Point(0, 530);
             this.LogoutPnl.Name = "LogoutPnl";
             this.LogoutPnl.Size = new System.Drawing.Size(200, 59);
@@ -290,15 +290,16 @@
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
-            // label3
+            // LogouT
             // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(93, 20);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 18);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Logout";
+            this.LogouT.AutoSize = true;
+            this.LogouT.ForeColor = System.Drawing.Color.White;
+            this.LogouT.Location = new System.Drawing.Point(93, 20);
+            this.LogouT.Name = "LogouT";
+            this.LogouT.Size = new System.Drawing.Size(69, 18);
+            this.LogouT.TabIndex = 5;
+            this.LogouT.Text = "Logout";
+            this.LogouT.Click += new System.EventHandler(this.LogouT_Click);
             // 
             // guna2Elipse1
             // 
@@ -307,7 +308,7 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.panel8.Controls.Add(this.label14);
+            this.panel8.Controls.Add(this.XT);
             this.panel8.Controls.Add(this.label7);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel8.Location = new System.Drawing.Point(200, 0);
@@ -315,17 +316,18 @@
             this.panel8.Size = new System.Drawing.Size(809, 59);
             this.panel8.TabIndex = 2;
             // 
-            // label14
+            // XT
             // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.White;
-            this.label14.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.ForeColor = System.Drawing.Color.Red;
-            this.label14.Location = new System.Drawing.Point(769, 15);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(28, 25);
-            this.label14.TabIndex = 10;
-            this.label14.Text = "X";
+            this.XT.AutoSize = true;
+            this.XT.BackColor = System.Drawing.Color.White;
+            this.XT.Font = new System.Drawing.Font("Verdana", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.XT.ForeColor = System.Drawing.Color.Red;
+            this.XT.Location = new System.Drawing.Point(769, 15);
+            this.XT.Name = "XT";
+            this.XT.Size = new System.Drawing.Size(28, 25);
+            this.XT.TabIndex = 10;
+            this.XT.Text = "X";
+            this.XT.Click += new System.EventHandler(this.XT_Click);
             // 
             // label7
             // 
@@ -472,26 +474,26 @@
             // 
             // ItemsList
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.ItemsList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ItemsList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.ItemsList.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ItemsList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.ItemsList.ColumnHeadersHeight = 4;
             this.ItemsList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ItemsList.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ItemsList.DefaultCellStyle = dataGridViewCellStyle9;
             this.ItemsList.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.ItemsList.Location = new System.Drawing.Point(206, 337);
             this.ItemsList.Name = "ItemsList";
@@ -604,7 +606,7 @@
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.Panel LogoutPnl;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label LogouT;
         private System.Windows.Forms.Panel CustPnl;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label CustT;
@@ -639,7 +641,7 @@
         private System.Windows.Forms.Label label13;
         private Guna.UI2.WinForms.Guna2DataGridView ItemsList;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label XT;
         private System.Windows.Forms.Label label2;
     }
 }
